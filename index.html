@@ -10,10 +10,19 @@
 </head>
 <body>
     <div class="card container mt-3 text-center">
-  <div class="card-body">
-      <h1 class="text-danger"> under development will deploy soon! </h1>
-      <a href="https://www.instagram.com/ronitbose_/"> <button type="button" class="btn btn-outline-success btn-sm mt-2">Contact Me On Instragram <i class="bi bi-instagram"></i></button></a>
-  </div>
+  <script>
+    function delayRedirect(){
+        document.getElementById('delayMsg').innerHTML = 'Please wait you\'ll be redirected after <span id="countDown">5</span> seconds....';
+        var count = 5;
+        setInterval(function(){
+            count--;
+            document.getElementById('countDown').innerHTML = count;
+            if (count == 0) {
+                window.location = 'http://demos.codexworld.com/'; 
+            }
+        },1000);
+    }
+    </script>
 </div>
    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
