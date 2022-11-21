@@ -12,14 +12,14 @@
     <script>
         delayRedirect();
         function delayRedirect() {
-            document.getElementById('delayMsg').innerHTML = 'Please wait you\'ll be downloading after <span id="countDown">3</span> sec..';
+            document.getElementById('delayMsg').innerHTML = 'Please wait you\'ll be redirecting after <span id="countDown">3</span> sec..';
             var count = 3;
             setInterval(function () {
                 count--;
                 document.getElementById('countDown').innerHTML = count;
                 if (count == 0) {
-                    window.location = 'https://ronitbose.live/wp-content/uploads/2022/11/my_01.zip';
-                    document.getElementById('delayMsg').innerHTML = "downloading....."
+                    window.location = 'https://ronitbose.live';
+                    document.getElementById('delayMsg').innerHTML = "redirecting....."
                 }
             }, 1000);
         }
