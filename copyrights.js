@@ -10,10 +10,8 @@ const consoleStyles = `
     cursor: pointer;
 `;
 
-$(document).ready(function () {
     showCopyRightMessage();
-  
-});
+
 
 function showCopyRightMessage() {
     const message = 'Developed with ❤️ by CodingTripura';
